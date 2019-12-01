@@ -1,0 +1,256 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.debug2 {
+  border: 1px solid blue;
+}
+
+/* ========================================================
+=========================FONT STYLES ====================
+============================================================== */
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu", Helvetica;
+  text-align: center;
+  font-weight: bold;
+}
+
+p,
+span,
+a {
+  font-family: "Signika", Helvetica;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p,
+span {
+  font-size: 1rem;
+}
+
+.secondary_nav p {
+  font-weight: bold;
+}
+
+.primary_nav a {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.banner_content,
+.item_name,
+.item_content,
+.footer p {
+  text-align: center;
+}
+
+
+
+/* ========================================================
+========================= LAYOUT & OTHER STYLES ====================
+============================================================== */
+
+body {
+  background: #EEF1F3;
+}
+
+ul {
+  list-style: none;
+}
+
+.main_header_name,
+.primary_nav a,
+.banner,
+.portfolio,
+.footer,
+.secondary_nav {
+  background: white;
+}
+
+.top,
+.portfolio,
+.contact {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.portfolio {
+  margin-top: 20px;
+}
+
+p: {
+  margin: 0;
+}
+
+/* ===============================================
+=================== HEADER ==================== */
+
+header,
+.header_main,
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main_header_name {
+  padding: 10px 0;
+  margin: 20px 0 5px 0;
+}
+
+.primary_nav a {
+  display: block;
+  padding: 5px 0;
+  margin: 7px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.banner img {
+  width: 80%;
+}
+
+.banner figure {
+  margin: 0;
+  text-align: center;
+}
+
+.banner p {
+  margin: 0;
+  padding: 20px 10px;
+}
+
+/* ===============================================
+=================== MAIN ==================== */
+
+.portfolio,
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_item {
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.item_image {
+  margin: 0;
+  text-align: center;
+}
+
+.item_name {
+  padding: 10px 15px;
+  margin: 20px 0 0 0;
+}
+
+.item_content {
+  padding: 10px 10px;
+  margin: 0;
+}
+
+.portfolio_item img{
+  width: 80%;
+}
+
+/* ===============================================
+=================== FOOTER ==================== */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer_name,
+.footer p {
+  margin: 0;
+}
+
+.footer_name {
+  padding: 20px 0;
+}
+.footer p {
+  padding: 10px 10px;
+}
+
+.secondary_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+}
+
+.secondary_nav a {
+  display: block;
+  padding: 10px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+asfd
