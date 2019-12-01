@@ -59,12 +59,12 @@ span {
 
 .primary_nav a {
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   font-weight: bold;
   color: black;
 }
@@ -114,20 +114,35 @@ p: {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .top,
+  .portfolio,
+  .contact {
+    width: 90%;
+  }
+  .main_header {
+    background: white;
+  }
+}
+
 /* ===============================================
 =================== HEADER ==================== */
 
 header,
-.header_main,
+.main_header,
 .banner {
   display: flex;
   flex-direction: column;
 }
 
+.main_header {
+  margin-top: 10px;
+}
+
 
 .main_header_name {
   padding: 10px 0;
-  margin: 20px 0 5px 0;
+  margin: 5px 0 5px 0;
 }
 
 .primary_nav a {
@@ -156,9 +171,52 @@ ul {
   text-align: center;
 }
 
-.banner p {
+.banner_content {
   margin: 0;
   padding: 20px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main_header {
+    padding: 20px 10px;
+  }
+  .primary_nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .primary_nav li {
+    margin: 0 5px;
+  }
+  .primary_nav a {
+    padding: 10px 5px;
+    margin: 0;
+  }
+  .banner {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .banner_content {
+    flex: 1 60%;
+    padding: 0 10px;
+    order: -1;
+  }
+  .banner_image {
+    flex: 1 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main_header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main_header_name {
+    margin-left: 30px;
+  }
+  .primary_nav li {
+    margin-right: 30px;
+  }
 }
 
 /* ===============================================
@@ -192,6 +250,39 @@ ul {
 
 .portfolio_item img{
   width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  .portfolio h2 {
+    width: 100%
+  }
+  .portfolio_item {
+    flex: 1 45%;
+  }
+  .item_image {
+    width: 95%;
+  }
+  .item_image img{
+    width: 100%;
+  }
+  .item_content {
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio_item {
+    flex: 1 33%;
+  }
+  .portfolio h2 {
+    padding: 30px 0;
+  }
 }
 
 /* ===============================================
@@ -229,7 +320,25 @@ ul {
   padding: 10px 5px;
 }
 
+.display_2 {
+  display: none;
+}
 
+@media only screen and (min-width: 768px) {
+  .footer p {
+    margin: 0 15%;
+  }
+  .secondary_nav ul {
+    display: flex;
+  }
+  .display_1 {
+    display: none;
+  }
+  .display_2 {
+    display: inherit;
+    margin-right: 10px;
+  }
+}
 
 
 
